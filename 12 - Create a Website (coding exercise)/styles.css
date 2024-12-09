@@ -1,0 +1,110 @@
+/ Perustyylit 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.slideshow {
+    position: relative;
+    max-width: 80%; /* Aseta pienempi leveys */
+    overflow: hidden;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.slides {
+    display: none;
+    position: relative;
+}
+
+.slides img {
+    width: 20%; /* Kuvien leveys suhteessa konttiin */
+    height: auto; /* Kuvasuhteen säilyttäminen */
+    max-height: 1000px; /* Aseta maksimi korkeus */
+    object-fit: cover; /* Peittää ylimääräisen tilan kuvan koossa */
+    border-radius: 10px;
+}
+
+
+.hero {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center; /* Keskittää vaakasuunnassa */
+  align-items: center; /* Keskittää pystysuunnassa */
+  height: 10vh; /* Täyttää koko näkymäalueen korkeuden */
+  text-align: center;
+  background-color: #f0f0f0; /* Taustaväri (valinnainen) */
+}
+
+#effects .hover-box {
+  padding: 20px;
+  font-size: 24px;
+  color: #000; /* Musta teksti */
+  border: 2px solid #333; /* Rajoitus elementille */
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+
+#effects .hover-box:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+h2.text-center {
+  color: #333;
+}
